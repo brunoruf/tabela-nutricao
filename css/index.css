@@ -1,0 +1,178 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+header{
+	background-color: #333;
+	height: 3em;
+	color: #FFF;
+	margin-bottom: 1em;
+}
+
+header h1{
+	font-size: 1.2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+header h2{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 2em;
+	font-weight: bold;
+	display: block;
+
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo{
+	width: 23%;
+	display: inline-block;
+	padding: 10px 0px;
+	margin-right: 10px;
+}
+
+.button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#0c8cd3;
+	border-color: #04324c;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+
+}
+
+.button:active{
+	background-color:#5cc4fc;
+}
+
+.button[disabled=disabled], .button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+.adicionar-paciente{
+    margin-top: 30px;
+}
+
+.info-peso {
+	box-sizing: border-box;
+}
+.campo-invalido{
+	background:#ffe8e8;
+	color: red;
+}
+
+
+#titulo-form {
+	margin-top: 40px;
+}
+
+.mensagem-validacao {
+	color: red;
+	display: none;
+}
+
+.mensagem-validacao.active {
+	display: block;
+}
+
+.btn-remover {
+	margin-left: 10px;
+}
+
+.paciente.remove {
+	opacity: 0;
+	transition: .4s ease-in-out ;
+	background: red;
+}
+
+.header-table {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin: .5em 0;
+	margin-bottom: 20px;
+}
+
+.form-busca {
+	height: 32px;
+	border-radius: 8px;
+	border: 1px solid #cecece;
+	padding-left: 8px;
+}
